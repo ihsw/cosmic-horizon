@@ -1,1 +1,6 @@
-**/*.js
+node_modules
+build
+.eslintrc.js
+.gitignore
+.prettierrc.json
+eslint-plugin-rules.json

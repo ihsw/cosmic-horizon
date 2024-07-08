@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/build/index.js",
+  "main": "./build/dist/index.js",
   "scripts": {
     "build": "tsc",
     "lint": "eslint ./src",
