@@ -1,4 +1,7 @@
-FROM node
+FROM ubuntu
+
+RUN apt-get update -y \
+    && apt-get install -yq nodejs npm
 
 COPY app /srv/app
 WORKDIR /srv/app
@@ -7,7 +10,11 @@ RUN npm install \
     && npm prune --omit=dev
 
 
-FROM node
+FROM ubuntu
+
+RUN apt-get update -y \
+    && apt-get install -yq nodejs \
+        ffmpeg intel-media-va-driver-non-free mediainfo
 
 RUN mkdir -p /srv/app
 COPY --from=0 /srv/app/node_modules /srv/app/node_modules
