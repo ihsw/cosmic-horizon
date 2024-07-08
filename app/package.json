@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint ./src",
+    "reformat": "prettier -w ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@blueprintjs/eslint-config": "^4.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.3.2",
+    "typescript": "5.3"
+  }
+}
